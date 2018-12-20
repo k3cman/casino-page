@@ -7,6 +7,12 @@
   z-index: 100;
 }
 
+.stickySide{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
 a {
   color: #0072bc;
 }
@@ -177,6 +183,19 @@ nav {
     border-left: 1px solid #e4dcec;
     position: relative;
 
+    #news {
+
+      border-radius: 4px;
+
+    }
+
+    p {
+
+      .date {
+        font-size: 10px;
+      }
+    }
+
     &:first-child {
       border-left: none;
     }
@@ -247,6 +266,10 @@ nav {
   border-left: 0;
 }
 
+.divider-btm {
+  border-bottom: 1px solid #e4dcec;
+}
+
 .card-body-m {
   font-weight: normal;
   padding: 20px;
@@ -291,4 +314,23 @@ nav {
   border-radius: 50%;
   background: #0092C9;
   cursor: pointer;
+}
+
+.brd {
+  border-top: 1px solid #d9e5f4;
+  border-top-width: 80%;
+}
+
+.table-head {
+  tr {
+    th {
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #d9e5f4;
 }
