@@ -92,6 +92,12 @@ nav {
       padding-left: 2px; }
   nav .searchNav {
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -114,6 +120,12 @@ nav {
       padding: 0px 10px; }
   nav .search {
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -159,6 +171,12 @@ nav {
     list-style: none; }
     .jumbo .reviews ul li {
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-end; }
@@ -239,6 +257,12 @@ nav {
     padding: 20px;
     font-weight: normal;
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     flex-direction: row;
     justify-content: center; }
 
@@ -275,7 +299,13 @@ nav {
 .carousel-item-prev,
 .carousel-item-next,
 .carousel-item.active {
-  display: flex; }
+  display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */ }
 
 .carousel-inner > .carousel-item.next.left,
 .carousel-inner > .carousel-item.prev.right {
@@ -328,6 +358,25 @@ nav {
 footer {
   width: 100%;
   background-color: #d9e5f4; }
+  footer .social {
+    font-size: 24px; }
+    footer .social button {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      outline: none;
+      border: none;
+      color: white;
+      cursor: pointer; }
+    footer .social #fb {
+      background-color: #3a5897; }
+    footer .social #tw {
+      background-color: #25a6d1; }
+  footer ul {
+    list-style: none;
+    padding-left: 0; }
+    footer ul li a {
+      color: #313238; }
 
 @media screen and (min-width: 992px) {
   .navbar {
