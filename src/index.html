@@ -15,7 +15,7 @@
 <body>
   <header>
     <div class="container">
-      <div class="row no-gutter">
+      <div class="navbar-dark row no-gutter">
         <div class="mx-auto mx-lg-0">
           <img src="./assets/images/logo.png" />
         </div>
@@ -25,7 +25,7 @@
             updates:
           </p>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Recipient's username"
               aria-describedby="button-addon2" />
             <div class="input-group-append">
               <button class="btn sub-btn" type="button" id="button-addon2">
@@ -39,7 +39,7 @@
         </div>
         <button class="navbar-toggler ml-auto d-lg-none" style="color:white;" type="button" data-toggle="collapse"
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">N</span>
+          <span class="navbar-toggler-icon"></span>
         </button>
       </div>
     </div>
@@ -49,11 +49,176 @@
       <div class="navbar navbar-expand-lg navbar-light custom-nav">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item p-0">
+            <li class="nav-item p-0 active">
               <a class="nav-link " href="#">World casinos <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item p-0 active">
-              <a class="nav-link" href="#">online casinos</a>
+            <li class="nav-item p-0 dropdown">
+              <a class="nav-link" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                href="#">online casinos</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-2 pt-2">
+                      <span class="text-uppercase ">CONTINENTS</span>
+                      <ul class="nav my-nav flex-column text-muted text-normal text-capitalize">
+                        <li>
+                          <a class="text-muted" href="">North America</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">South America</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Central America</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Caribbean</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">West Europe</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">East Europe</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Africa</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">East Asia</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Central Asia</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Oceania</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Middle East</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Cruiseships</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-2 pt-2">
+                      <span class="text-uppercase ">COUNTRIES</span>
+                      <ul class="nav my-nav flex-column text-muted text-normal text-capitalize">
+                        <li>
+                          <img class="pb-1" src="assets/icons/us.gif" /><a class="text-muted pl-2" href="">United
+                            States</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/mo.gif" /><a class="text-muted  pl-2" href="">Macau,
+                            China</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/fr.gif" /><a class="text-muted  pl-2" href="">France</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/ph.gif" /><a class="text-muted  pl-2" href="">Philipines</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/sg.gif" /><a class="text-muted  pl-2" href="">Singapore</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/nl.gif" /><a class="text-muted  pl-2" href="">Netherlands</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/gb.gif" /><a class="text-muted  pl-2" href="">United
+                            Kingdom</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/ca.gif" /><a class="text-muted  pl-2" href="">Canada</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/ar.gif" /><a class="text-muted  pl-2" href="">Argentina</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/de.gif" /><a class="text-muted  pl-2" href="">Germany</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/ee.gif" /><a class="text-muted  pl-2" href="">Estonia</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/pe.gif" /><a class="text-muted  pl-2" href="">Peru</a>
+                        </li>
+                        <li>
+                          <img class="pb-1" src="assets/icons/ru.gif" /><a class="text-muted  pl-2" href="">Russia</a>
+                        </li>
+
+
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-3 pt-2">
+                      <span class="text-uppercase ">INDUSTRY related Features</span>
+                      <ul class="nav my-nav flex-column text-muted text-normal text-capitalize text-left">
+                        <li>
+                          <a class="text-muted" href="">Casinos for sale</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Casino Statistics</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Employment</a>
+                        </li>
+                        <li>
+                          <a class="text-muted" href="">Casino by operator</a>
+                        </li>
+
+
+
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-5">
+                      <div class="dropdown-article d-flex flex-row justify-content-center align-items-center my-4">
+                        <img src="./assets/images/news-drop.jpg" />
+                        <div class="pl-2">
+                          <p class="drp-title mb-0"><strong class="text-uppercase">MACAU</strong></p>
+                          <p class="drp-desc text-muted text-normal"><small>High rollers, luxury casinos and hotels
+                              plus a rich heritage make Macau one of the world's premiere gaming destinations.</small></p>
+                        </div>
+                      </div>
+                      <div class="dropdown-article d-flex flex-row justify-content-center align-items-center my-4">
+                        <img src="./assets/images/news-drop.jpg" />
+                        <div class="pl-2">
+                          <p class="drp-title mb-0"><strong class="text-uppercase">LAS VEGAS</strong></p>
+                          <p class="drp-desc text-muted text-normal"><small>Las Vegas casino resorts have been long
+                              known for their entertaining shows, endless casino action and bright lights.</small></p>
+                        </div>
+                      </div>
+                      <div class="dropdown-article d-flex flex-row justify-content-center align-items-center my-4">
+                        <img src="./assets/images/news-drop.jpg" />
+                        <div class="pl-2">
+                          <p class="drp-title mb-0"><strong class="text-uppercase">COTAI STRIP</strong></p>
+                          <p class="drp-desc text-muted text-normal"><small>Biggest casinos in the world + newest
+                              casinos in Macau; Cotai Strip threatens mainland Macau for top gambling destination.</small></p>
+                        </div>
+                      </div>
+                      <div class="dropdown-article d-flex flex-row justify-content-center align-items-center my-4">
+                        <img src="./assets/images/news-drop.jpg" />
+                        <div class="pl-2">
+                          <p class="drp-title mb-0"><strong class="text-uppercase">ENTERTAINMENT CITY</strong></p>
+                          <p class="drp-desc text-muted text-normal"><small>Sleeping giant of Asian casinos is the
+                              Philippines. Casino tour? Multiple multi-billion dollar casinos are operating here.</small></p>
+                        </div>
+                      </div>
+                      <div class="dropdown-article d-flex flex-row justify-content-center align-items-center my-4">
+                        <img src="./assets/images/news-drop.jpg" />
+                        <div class="pl-2">
+                          <p class="drp-title mb-0"><strong class="text-uppercase">ATLANTIC CITY</strong></p>
+                          <p class="drp-desc text-muted text-normal"><small>Play in Atlantic City's wide variety of
+                              casinos and poker rooms. This is the place that inspired the board game Monopoly.</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+
+
+              </div>
             </li>
             <li class="nav-item p-0">
               <a class="nav-link" href="#">news</a>
@@ -96,11 +261,40 @@
       </div>
       <div class="sub-nav-menu pb-0 pt-2 mb-0 mt-0">
         <ul class=" d-flex flex-row justify-content-end mb-0 pb-2 ">
-          <li>Calendars</li>
-          <li>Gaming Law</li>
-          <li>Tribal Gaming</li>
-          <li>Major Casino News</li>
-          <li>Gaming News By Region</li>
+          <li class="dropdown show">
+            <a class="dropdown-toggle" href="#" id="drp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Calendar
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+
+
+          <li><a href="">Gaming Law</a></li>
+          <li><a href="">Tribal Gaming</a></li>
+          <li class="dropdown show">
+            <a class="dropdown-toggle" href="#" id="drp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Major Casino News
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+          <li class="dropdown show">
+            <a class="dropdown-toggle" href="#" id="drp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Gaming News By Region
+            </a>
+            <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -126,17 +320,61 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-none d-lg-flex flex-row align-items-center justify-content-end mt-5">
+        <div class="col-md-6 d-none d-lg-flex flex-row align-items-center justify-content-end mt-5 pr-0">
           <div class="average text-center">
             <h1 class="mb-0 pb-0 display-4">4.5</h1>
             <p class="primary-dark mt-0 pt-0"><strong>Average</strong></p>
           </div>
           <div class="reviews">
             <ul>
-              <li class="pt-2"><span>4.4</span>casinolistings.com</li>
-              <li class="pt-2"><span>4.5</span>latestcasinobonuses.com</li>
-              <li class="pt-2"><span>4.6</span>casinolistings.com</li>
-              <li class="pt-2"><span>4.5</span>casinolistings.com</li>
+              <li class="pt2 d-flex flex-row ">
+                <p class="rew-rating p-0 m-0 mr-2">
+                  4.4
+                </p>
+                <div class="container-fluid p-0 mb-1">
+                  <p class="">casinolistings.com</p>
+                  <div class="progress" id="progress-wrapper" style="height:3px; width:100%">
+                    <div class="progress-bar bg-white" role="progressbar" style="width: 80%; height:3px; z-index:200"
+                      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="pt2 d-flex flex-row ">
+                <p class="rew-rating p-0 m-0 mr-2">
+                  4.5
+                </p>
+                <div class="container-fluid p-0 mb-1">
+                  <p class="">latestcasinobonuses.com</p>
+                  <div class="progress" id="progress-wrapper" style="height:3px; width:100%">
+                    <div class="progress-bar bg-white" role="progressbar" style="width: 80%; height:3px; z-index:200"
+                      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="pt2 d-flex flex-row ">
+                <p class="rew-rating p-0 m-0 mr-2">
+                  4.6
+                </p>
+                <div class="container-fluid p-0 mb-1">
+                  <p class="">casinolistings.com</p>
+                  <div class="progress" id="progress-wrapper" style="height:3px; width:100%">
+                    <div class="progress-bar bg-white" role="progressbar" style="width: 80%; height:3px; z-index:200"
+                      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="pt2 d-flex flex-row ">
+                <p class="rew-rating p-0 m-0 mr-2">
+                  4.4
+                </p>
+                <div class="container-fluid p-0 mb-1">
+                  <p class="">casinolistings.com</p>
+                  <div class="progress" id="progress-wrapper" style="height:3px; width:100%">
+                    <div class="progress-bar bg-white" role="progressbar" style="width: 80%; height:3px; z-index:200"
+                      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
             </ul>
             <a href="#" class="mt-3 float-right text-white"><strong>REVIEW CASINO ></strong></a>
           </div>
@@ -159,82 +397,231 @@
           <div class="card-title d-flex flex-row justify-content-between">
             Casino Bonuses
             <div class="d-flex flex-row">
-              <a class="btn btn-secondary-outline prev p-0 pr-2" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
-              <a class="btn btn-secondary-outline next p-0" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+              <a class="btn prev p-0 pr-2" href="" title="go back"><i class="fa fa-chevron-left"></i></a>
+              <span id="number-slide">4</span>/8
+              <a class="btn next p-0" href="" title="more"><i class="fa fa-chevron-right"></i></a>
             </div>
           </div>
-          <div class="carousel slide" data-ride="carousel" id="postsCarousel">
+          <div class="carousel slide" id="postsCarousel">
             <div class="container p-0">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-3 card-body-main">
-                        <a href="#" class="bonus-details float-right clearfix">Details</a><br />
-                        <div class="bonus-title  text-center pb-2">
+                      <div class="col-md-3 col-12 card-body-main">
+                        <div id="firstCardMain">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('first')">Details</a><br />
+                          <div class="bonus-title  text-center pb-2">
 
-                          <h5 class="pt-2 text-muted text-uppercase">Sign Up Bonus</h5>
-                          <h4 class="mt-4">100% UP TO</h4>
-                          <h2>€/£/$ 250</h2>
-                          <p class="text-primary mt-5 mb-0">
-                            Code: <strong>POKIES1</strong>
-                          </p>
-                          <p class="text-primary">WR: <strong>40XB</strong></p>
+                            <h5 class="pt-2 text-muted text-uppercase">SIGN UP BONUS</h5>
+                            <h4 class="mt-4">100% UP TO</h4>
+                            <h2>€/£/$ 250</h2>
+                            <p class="text-primary mt-5 mb-0">
+                              Code: <strong>POKIES1</strong>
+                            </p>
+                            <p class="text-primary">WR: <strong>40XB</strong></p>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-lg btn-block">
+                            PLAY NOW
+                          </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                          PLAY NOW
-                        </button>
+                        <div id="firstCard" class="d-none bonus-desc">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('first')">Details</a>
+                          <br />
+                          <p class="text-muted mb-3"><small> New Customer Offer. T&C’s Apply. 18+. Minimum deposit:
+                              €/$10. In the case of the Standard and VIP New Player Bonuses customers from the
+                              following countries must wager their deposit/transfer and bonus 50 times prior to making
+                              a withdrawal: Argentina, Belarus, Czech Republic, Hungary, India, ...
+                              Lithuania, Moldova, Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and
+                              Uruguay. In the case of the Standard and VIP New Player Bonuses, customers from the
+                              following countries must wager their deposit/transfer and bonus 200 times prior to making
+                              a withdrawal: Finland, Latvia, and Romania. Customers from the following countries are
+                              excluded from this promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan,
+                              Kuwait, Lebanon, Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan,
+                              Thailand, Ukraine, United Arab Emirates and Vietnam.Lithuania, Moldova, Nepal, Paraguay,
+                              Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of the Standard and
+                              VIP New Player Bonuses, customers from the following countries must wager their
+                              deposit/transfer and bonus 200 times prior to making a withdrawal: Finland, Latvia, and
+                              Romania. Customers from the following countries are excluded from this promotion:
+                              Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon, Malaysia, Pakistan,
+                              Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine, United Arab Emirates
+                              and Vietnam.RepublicHungary, India ...
+                              Lithuania ...
+                              Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of
+                              the Standard and VIP New Player Bonuses, customers from the following countries must
+                              wager their deposit/transfer and bonus 200 times prior to making a withdrawal: Finland,
+                              Latvia, and Romania. Customers from the following countries are excluded from this
+                              promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon,
+                              Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine,
+                              United Arab Emirates and Vietnam.
+                            </small></p>
+
+                          <button type="button" class="btn btn-primary btn-md-lg btn-block">
+                            PLAY NOW
+                          </button>
+                        </div>
                       </div>
-                      <div class="col-md-3 card-body-main">
-                        <a href="#" class="bonus-details float-right clearfix">Details</a><br />
-                        <div class="bonus-title  text-center pb-2">
+                      <div class="col-md-3 col-12 card-body-main">
+                        <div id="secondCardMain">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('second')">Details</a><br />
+                          <div class="bonus-title  text-center pb-2">
 
-                          <h5 class="pt-2 text-muted text-uppercase">2<sup class="text-lowercase">nd</sup> deposit
-                            bonus</h5>
-                          <h4 class="mt-4">50% UP TO</h4>
-                          <h2>€/£/$ 250</h2>
-                          <p class="text-primary mt-5 mb-0">
-                            Code: <strong>POKIES1</strong>
-                          </p>
-                          <p class="text-primary">WR: <strong>40XB</strong></p>
+                            <h5 class="pt-2 text-muted text-uppercase">2<sup class="text-lowercase">nd</sup> deposit
+                              bonus</h5>
+                            <h4 class="mt-4">50% UP TO</h4>
+                            <h2>€/£/$ 250</h2>
+                            <p class="text-primary mt-5 mb-0">
+                              Code: <strong>POKIES1</strong>
+                            </p>
+                            <p class="text-primary">WR: <strong>40XB</strong></p>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-lg btn-block">
+                            PLAY NOW
+                          </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                          PLAY NOW
-                        </button>
+                        <div id="secondCard" class="d-none bonus-desc">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('second')">Details</a>
+                          <br />
+                          <p class="text-muted mb-3"><small> New Customer Offer. T&C’s Apply. 18+. Minimum deposit:
+                              €/$10. In the case of the Standard and VIP New Player Bonuses customers from the
+                              following countries must wager their deposit/transfer and bonus 50 times prior to making
+                              a withdrawal: Argentina, Belarus, Czech Republic, Hungary, India, ...
+                              Lithuania, Moldova, Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and
+                              Uruguay. In the case of the Standard and VIP New Player Bonuses, customers from the
+                              following countries must wager their deposit/transfer and bonus 200 times prior to making
+                              a withdrawal: Finland, Latvia, and Romania. Customers from the following countries are
+                              excluded from this promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan,
+                              Kuwait, Lebanon, Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan,
+                              Thailand, Ukraine, United Arab Emirates and Vietnam.Lithuania, Moldova, Nepal, Paraguay,
+                              Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of the Standard and
+                              VIP New Player Bonuses, customers from the following countries must wager their
+                              deposit/transfer and bonus 200 times prior to making a withdrawal: Finland, Latvia, and
+                              Romania. Customers from the following countries are excluded from this promotion:
+                              Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon, Malaysia, Pakistan,
+                              Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine, United Arab Emirates
+                              and Vietnam.RepublicHungary, India ...
+                              Lithuania ...
+                              Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of
+                              the Standard and VIP New Player Bonuses, customers from the following countries must
+                              wager their deposit/transfer and bonus 200 times prior to making a withdrawal: Finland,
+                              Latvia, and Romania. Customers from the following countries are excluded from this
+                              promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon,
+                              Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine,
+                              United Arab Emirates and Vietnam.
+                            </small></p>
+
+                          <button type="button" class="btn btn-primary btn-md-lg btn-block">
+                            PLAY NOW
+                          </button>
+                        </div>
                       </div>
-                      <div class="col-md-3 card-body-main">
-                        <a href="#" class="bonus-details float-right clearfix">Details</a><br />
-                        <div class="bonus-title  text-center pb-2">
+                      <div class="col-md-3 col-12 card-body-main">
+                        <div id="thirdCardMain">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('third')">Details</a><br />
+                          <div class="bonus-title  text-center pb-2">
 
-                          <h5 class="pt-2 text-muted text-uppercase">3<sup class="text-lowercase">rd</sup> deposit
-                            bonus</h5>
-                          <h4 class="mt-4">50% UP TO</h4>
-                          <h2>€/£/$ 500</h2>
-                          <p class="text-primary mt-5 mb-0">
-                            Code: <strong>POKIES1</strong>
-                          </p>
-                          <p class="text-primary">WR: <strong>40XB</strong></p>
+                            <h5 class="pt-2 text-muted text-uppercase">3<sup class="text-lowercase">rd</sup> deposit
+                              bonus</h5>
+                            <h4 class="mt-4">50% UP TO</h4>
+                            <h2>€/£/$ 500</h2>
+                            <p class="text-primary mt-5 mb-0">
+                              Code: <strong>POKIES1</strong>
+                            </p>
+                            <p class="text-primary">WR: <strong>40XB</strong></p>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-lg btn-block">
+                            PLAY NOW
+                          </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                          PLAY NOW
-                        </button>
+                        <div id="thirdCard" class="d-none bonus-desc">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('third')">Details</a>
+                          <br />
+                          <p class="text-muted mb-3"><small> New Customer Offer. T&C’s Apply. 18+. Minimum deposit:
+                              €/$10. In the case of the Standard and VIP New Player Bonuses customers from the
+                              following countries must wager their deposit/transfer and bonus 50 times prior to making
+                              a withdrawal: Argentina, Belarus, Czech Republic, Hungary, India, ...
+                              Lithuania, Moldova, Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and
+                              Uruguay. In the case of the Standard and VIP New Player Bonuses, customers from the
+                              following countries must wager their deposit/transfer and bonus 200 times prior to making
+                              a withdrawal: Finland, Latvia, and Romania. Customers from the following countries are
+                              excluded from this promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan,
+                              Kuwait, Lebanon, Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan,
+                              Thailand, Ukraine, United Arab Emirates and Vietnam.Lithuania, Moldova, Nepal, Paraguay,
+                              Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of the Standard and
+                              VIP New Player Bonuses, customers from the following countries must wager their
+                              deposit/transfer and bonus 200 times prior to making a withdrawal: Finland, Latvia, and
+                              Romania. Customers from the following countries are excluded from this promotion:
+                              Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon, Malaysia, Pakistan,
+                              Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine, United Arab Emirates
+                              and Vietnam.RepublicHungary, India ...
+                              Lithuania ...
+                              Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of
+                              the Standard and VIP New Player Bonuses, customers from the following countries must
+                              wager their deposit/transfer and bonus 200 times prior to making a withdrawal: Finland,
+                              Latvia, and Romania. Customers from the following countries are excluded from this
+                              promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon,
+                              Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine,
+                              United Arab Emirates and Vietnam.
+                            </small></p>
+
+                          <button type="button" class="btn btn-primary btn-md-lg btn-block">
+                            PLAY NOW
+                          </button>
+                        </div>
                       </div>
-                      <div class="col-md-3 card-body-main">
-                        <a href="#" class="bonus-details float-right clearfix">Details</a><br />
-                        <div class="bonus-title  text-center pb-2">
+                      <div class="col-md-3 col-12 card-body-main">
+                        <div id="fourtCardMain">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('fourt')">Details</a><br />
+                          <div class="bonus-title  text-center pb-2">
 
-                          <h5 class="pt-2 text-muted text-uppercase">4<sup class="text-lowercase">th</sup> deposit
-                            bonus</h5>
-                          <h4 class="mt-4">70% UP TO</h4>
-                          <h2>€/£/$ 250</h2>
-                          <p class="text-primary mt-5 mb-0">
-                            Code: <strong>POKIES1</strong>
-                          </p>
-                          <p class="text-primary">WR: <strong>40XB</strong></p>
+                            <h5 class="pt-2 text-muted text-uppercase">4<sup class="text-lowercase">th</sup> deposit
+                              bonus</h5>
+                            <h4 class="mt-4">70% UP TO</h4>
+                            <h2>€/£/$ 250</h2>
+                            <p class="text-primary mt-5 mb-0">
+                              Code: <strong>POKIES1</strong>
+                            </p>
+                            <p class="text-primary">WR: <strong>40XB</strong></p>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-lg btn-block">
+                            PLAY NOW
+                          </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                          PLAY NOW
-                        </button>
+                        <div id="fourtCard" class="d-none bonus-desc">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('fourt')">Details</a>
+                          <br />
+                          <p class="text-muted mb-3"><small> New Customer Offer. T&C’s Apply. 18+. Minimum deposit:
+                              €/$10. In the case of the Standard and VIP New Player Bonuses customers from the
+                              following countries must wager their deposit/transfer and bonus 50 times prior to making
+                              a withdrawal: Argentina, Belarus, Czech Republic, Hungary, India, ...
+                              Lithuania, Moldova, Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and
+                              Uruguay. In the case of the Standard and VIP New Player Bonuses, customers from the
+                              following countries must wager their deposit/transfer and bonus 200 times prior to making
+                              a withdrawal: Finland, Latvia, and Romania. Customers from the following countries are
+                              excluded from this promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan,
+                              Kuwait, Lebanon, Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan,
+                              Thailand, Ukraine, United Arab Emirates and Vietnam.Lithuania, Moldova, Nepal, Paraguay,
+                              Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of the Standard and
+                              VIP New Player Bonuses, customers from the following countries must wager their
+                              deposit/transfer and bonus 200 times prior to making a withdrawal: Finland, Latvia, and
+                              Romania. Customers from the following countries are excluded from this promotion:
+                              Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon, Malaysia, Pakistan,
+                              Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine, United Arab Emirates
+                              and Vietnam.RepublicHungary, India ...
+                              Lithuania ...
+                              Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of
+                              the Standard and VIP New Player Bonuses, customers from the following countries must
+                              wager their deposit/transfer and bonus 200 times prior to making a withdrawal: Finland,
+                              Latvia, and Romania. Customers from the following countries are excluded from this
+                              promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon,
+                              Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine,
+                              United Arab Emirates and Vietnam.
+                            </small></p>
+
+                          <button type="button" class="btn btn-primary btn-md-lg btn-block">
+                            PLAY NOW
+                          </button>
+                        </div>
                       </div>
 
                     </div>
@@ -244,72 +631,220 @@
                 <div class="carousel-item">
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-3 card-body-main">
-                        <a href="#" class="bonus-details float-right clearfix">Details</a><br />
-                        <div class="bonus-title  text-center pb-2">
+                      <div class="col-md-3 col-12 card-body-main">
+                        <div id="fifthCardMain">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('fifth')">Details</a><br />
+                          <div class="bonus-title  text-center pb-2">
 
-                          <h5 class="pt-2 text-muted text-uppercase">Sign Up Bonus</h5>
-                          <h4 class="mt-4">100% UP TO</h4>
-                          <h2>€/£/$ 250</h2>
-                          <p class="text-primary mt-5 mb-0">
-                            Code: <strong>POKIES1</strong>
-                          </p>
-                          <p class="text-primary">WR: <strong>40XB</strong></p>
+                            <h5 class="pt-2 text-muted text-uppercase">SIGN UP BONUS</h5>
+                            <h4 class="mt-4">100% UP TO</h4>
+                            <h2>€/£/$ 250</h2>
+                            <p class="text-primary mt-5 mb-0">
+                              Code: <strong>POKIES1</strong>
+                            </p>
+                            <p class="text-primary">WR: <strong>40XB</strong></p>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-lg btn-block">
+                            PLAY NOW
+                          </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                          PLAY NOW
-                        </button>
+                        <div id="fifthCard" class="d-none bonus-desc">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('fifth')">Details</a>
+                          <br />
+                          <p class="text-muted mb-3"><small> New Customer Offer. T&C’s Apply. 18+. Minimum deposit:
+                              €/$10. In the case of the Standard and VIP New Player Bonuses customers from the
+                              following countries must wager their deposit/transfer and bonus 50 times prior to making
+                              a withdrawal: Argentina, Belarus, Czech Republic, Hungary, India, ...
+                              Lithuania, Moldova, Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and
+                              Uruguay. In the case of the Standard and VIP New Player Bonuses, customers from the
+                              following countries must wager their deposit/transfer and bonus 200 times prior to making
+                              a withdrawal: Finland, Latvia, and Romania. Customers from the following countries are
+                              excluded from this promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan,
+                              Kuwait, Lebanon, Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan,
+                              Thailand, Ukraine, United Arab Emirates and Vietnam.Lithuania, Moldova, Nepal, Paraguay,
+                              Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of the Standard and
+                              VIP New Player Bonuses, customers from the following countries must wager their
+                              deposit/transfer and bonus 200 times prior to making a withdrawal: Finland, Latvia, and
+                              Romania. Customers from the following countries are excluded from this promotion:
+                              Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon, Malaysia, Pakistan,
+                              Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine, United Arab Emirates
+                              and Vietnam.RepublicHungary, India ...
+                              Lithuania ...
+                              Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of
+                              the Standard and VIP New Player Bonuses, customers from the following countries must
+                              wager their deposit/transfer and bonus 200 times prior to making a withdrawal: Finland,
+                              Latvia, and Romania. Customers from the following countries are excluded from this
+                              promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon,
+                              Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine,
+                              United Arab Emirates and Vietnam.
+                            </small></p>
+
+                          <button type="button" class="btn btn-primary btn-md-lg btn-block">
+                            PLAY NOW
+                          </button>
+                        </div>
                       </div>
-                      <div class="col-md-3 card-body-main">
-                        <a href="#" class="bonus-details float-right clearfix">Details</a><br />
-                        <div class="bonus-title  text-center pb-2">
+                      <div class="col-md-3 col-12 card-body-main">
+                        <div id="sixCardMain">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('six')">Details</a><br />
+                          <div class="bonus-title  text-center pb-2">
 
-                          <h5 class="pt-2 text-muted text-uppercase">2<sup class="text-lowercase">nd</sup> deposit
-                            bonus</h5>
-                          <h4 class="mt-4">50% UP TO</h4>
-                          <h2>€/£/$ 250</h2>
-                          <p class="text-primary mt-5 mb-0">
-                            Code: <strong>POKIES1</strong>
-                          </p>
-                          <p class="text-primary">WR: <strong>40XB</strong></p>
+                            <h5 class="pt-2 text-muted text-uppercase">2<sup class="text-lowercase">nd</sup> deposit
+                              bonus</h5>
+                            <h4 class="mt-4">50% UP TO</h4>
+                            <h2>€/£/$ 250</h2>
+                            <p class="text-primary mt-5 mb-0">
+                              Code: <strong>POKIES1</strong>
+                            </p>
+                            <p class="text-primary">WR: <strong>40XB</strong></p>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-lg btn-block">
+                            PLAY NOW
+                          </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                          PLAY NOW
-                        </button>
+                        <div id="sixCard" class="d-none bonus-desc">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('six')">Details</a>
+                          <br />
+                          <p class="text-muted mb-3"><small> New Customer Offer. T&C’s Apply. 18+. Minimum deposit:
+                              €/$10. In the case of the Standard and VIP New Player Bonuses customers from the
+                              following countries must wager their deposit/transfer and bonus 50 times prior to making
+                              a withdrawal: Argentina, Belarus, Czech Republic, Hungary, India, ...
+                              Lithuania, Moldova, Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and
+                              Uruguay. In the case of the Standard and VIP New Player Bonuses, customers from the
+                              following countries must wager their deposit/transfer and bonus 200 times prior to making
+                              a withdrawal: Finland, Latvia, and Romania. Customers from the following countries are
+                              excluded from this promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan,
+                              Kuwait, Lebanon, Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan,
+                              Thailand, Ukraine, United Arab Emirates and Vietnam.Lithuania, Moldova, Nepal, Paraguay,
+                              Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of the Standard and
+                              VIP New Player Bonuses, customers from the following countries must wager their
+                              deposit/transfer and bonus 200 times prior to making a withdrawal: Finland, Latvia, and
+                              Romania. Customers from the following countries are excluded from this promotion:
+                              Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon, Malaysia, Pakistan,
+                              Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine, United Arab Emirates
+                              and Vietnam.RepublicHungary, India ...
+                              Lithuania ...
+                              Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of
+                              the Standard and VIP New Player Bonuses, customers from the following countries must
+                              wager their deposit/transfer and bonus 200 times prior to making a withdrawal: Finland,
+                              Latvia, and Romania. Customers from the following countries are excluded from this
+                              promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon,
+                              Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine,
+                              United Arab Emirates and Vietnam.
+                            </small></p>
+
+                          <button type="button" class="btn btn-primary btn-md-lg btn-block">
+                            PLAY NOW
+                          </button>
+                        </div>
                       </div>
-                      <div class="col-md-3 card-body-main">
-                        <a href="#" class="bonus-details float-right clearfix">Details</a><br />
-                        <div class="bonus-title  text-center pb-2">
+                      <div class="col-md-3 col-12 card-body-main">
+                        <div id="sevenCardMain">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('seven')">Details</a><br />
+                          <div class="bonus-title  text-center pb-2">
 
-                          <h5 class="pt-2 text-muted text-uppercase">3<sup class="text-lowercase">rd</sup> deposit
-                            bonus</h5>
-                          <h4 class="mt-4">50% UP TO</h4>
-                          <h2>€/£/$ 500</h2>
-                          <p class="text-primary mt-5 mb-0">
-                            Code: <strong>POKIES1</strong>
-                          </p>
-                          <p class="text-primary">WR: <strong>40XB</strong></p>
+                            <h5 class="pt-2 text-muted text-uppercase">3<sup class="text-lowercase">rd</sup> deposit
+                              bonus</h5>
+                            <h4 class="mt-4">50% UP TO</h4>
+                            <h2>€/£/$ 500</h2>
+                            <p class="text-primary mt-5 mb-0">
+                              Code: <strong>POKIES1</strong>
+                            </p>
+                            <p class="text-primary">WR: <strong>40XB</strong></p>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-lg btn-block">
+                            PLAY NOW
+                          </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                          PLAY NOW
-                        </button>
+                        <div id="sevenCard" class="d-none bonus-desc">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('seven')">Details</a>
+                          <br />
+                          <p class="text-muted mb-3"><small> New Customer Offer. T&C’s Apply. 18+. Minimum deposit:
+                              €/$10. In the case of the Standard and VIP New Player Bonuses customers from the
+                              following countries must wager their deposit/transfer and bonus 50 times prior to making
+                              a withdrawal: Argentina, Belarus, Czech Republic, Hungary, India, ...
+                              Lithuania, Moldova, Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and
+                              Uruguay. In the case of the Standard and VIP New Player Bonuses, customers from the
+                              following countries must wager their deposit/transfer and bonus 200 times prior to making
+                              a withdrawal: Finland, Latvia, and Romania. Customers from the following countries are
+                              excluded from this promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan,
+                              Kuwait, Lebanon, Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan,
+                              Thailand, Ukraine, United Arab Emirates and Vietnam.Lithuania, Moldova, Nepal, Paraguay,
+                              Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of the Standard and
+                              VIP New Player Bonuses, customers from the following countries must wager their
+                              deposit/transfer and bonus 200 times prior to making a withdrawal: Finland, Latvia, and
+                              Romania. Customers from the following countries are excluded from this promotion:
+                              Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon, Malaysia, Pakistan,
+                              Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine, United Arab Emirates
+                              and Vietnam.RepublicHungary, India ...
+                              Lithuania ...
+                              Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of
+                              the Standard and VIP New Player Bonuses, customers from the following countries must
+                              wager their deposit/transfer and bonus 200 times prior to making a withdrawal: Finland,
+                              Latvia, and Romania. Customers from the following countries are excluded from this
+                              promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon,
+                              Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine,
+                              United Arab Emirates and Vietnam.
+                            </small></p>
+
+                          <button type="button" class="btn btn-primary btn-md-lg btn-block">
+                            PLAY NOW
+                          </button>
+                        </div>
                       </div>
-                      <div class="col-md-3 card-body-main">
-                        <a href="#" class="bonus-details float-right clearfix">Details</a><br />
-                        <div class="bonus-title  text-center pb-2">
+                      <div class="col-md-3 col-12 card-body-main">
+                        <div id="eightCardMain">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('eight')">Details</a><br />
+                          <div class="bonus-title  text-center pb-2">
 
-                          <h5 class="pt-2 text-muted text-uppercase">4<sup class="text-lowercase">th</sup> deposit
-                            bonus</h5>
-                          <h4 class="mt-4">70% UP TO</h4>
-                          <h2>€/£/$ 250</h2>
-                          <p class="text-primary mt-5 mb-0">
-                            Code: <strong>POKIES1</strong>
-                          </p>
-                          <p class="text-primary">WR: <strong>40XB</strong></p>
+                            <h5 class="pt-2 text-muted text-uppercase">4<sup class="text-lowercase">th</sup> deposit
+                              bonus</h5>
+                            <h4 class="mt-4">70% UP TO</h4>
+                            <h2>€/£/$ 250</h2>
+                            <p class="text-primary mt-5 mb-0">
+                              Code: <strong>POKIES1</strong>
+                            </p>
+                            <p class="text-primary">WR: <strong>40XB</strong></p>
+                          </div>
+                          <button type="button" class="btn btn-primary btn-lg btn-block">
+                            PLAY NOW
+                          </button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">
-                          PLAY NOW
-                        </button>
+                        <div id="eightCard" class="d-none bonus-desc">
+                          <a href="#" class="bonus-details float-right clearfix" onclick="collapseBonusDetails('eight')">Details</a>
+                          <br />
+                          <p class="text-muted mb-3"><small> New Customer Offer. T&C’s Apply. 18+. Minimum deposit:
+                              €/$10. In the case of the Standard and VIP New Player Bonuses customers from the
+                              following countries must wager their deposit/transfer and bonus 50 times prior to making
+                              a withdrawal: Argentina, Belarus, Czech Republic, Hungary, India, ...
+                              Lithuania, Moldova, Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and
+                              Uruguay. In the case of the Standard and VIP New Player Bonuses, customers from the
+                              following countries must wager their deposit/transfer and bonus 200 times prior to making
+                              a withdrawal: Finland, Latvia, and Romania. Customers from the following countries are
+                              excluded from this promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan,
+                              Kuwait, Lebanon, Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan,
+                              Thailand, Ukraine, United Arab Emirates and Vietnam.Lithuania, Moldova, Nepal, Paraguay,
+                              Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of the Standard and
+                              VIP New Player Bonuses, customers from the following countries must wager their
+                              deposit/transfer and bonus 200 times prior to making a withdrawal: Finland, Latvia, and
+                              Romania. Customers from the following countries are excluded from this promotion:
+                              Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon, Malaysia, Pakistan,
+                              Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine, United Arab Emirates
+                              and Vietnam.RepublicHungary, India ...
+                              Lithuania ...
+                              Nepal, Paraguay, Peru, Poland, Slovenia, South Korea, Sweden and Uruguay. In the case of
+                              the Standard and VIP New Player Bonuses, customers from the following countries must
+                              wager their deposit/transfer and bonus 200 times prior to making a withdrawal: Finland,
+                              Latvia, and Romania. Customers from the following countries are excluded from this
+                              promotion: Cambodia, China, Cuba, Egypt, Indonesia, Kazakhstan, Kuwait, Lebanon,
+                              Malaysia, Pakistan, Qatar, Russia, Saudi Arabia, Singapore, Taiwan, Thailand, Ukraine,
+                              United Arab Emirates and Vietnam.
+                            </small></p>
+
+                          <button type="button" class="btn btn-primary btn-md-lg btn-block ca-btn">
+                            PLAY NOW
+                          </button>
+                        </div>
                       </div>
 
                     </div>
@@ -368,10 +903,10 @@
           <div class="accordion" id="userReview">
             <div class="sidebar-item ">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#software"
-                    aria-expanded="false" aria-controls="software">
-                    Casino Software
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#software" aria-expanded="false" aria-controls="software">
+                    Casino Software<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
                 <div id="software" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
@@ -385,10 +920,10 @@
             </div>
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#games"
-                    aria-expanded="false" aria-controls="games">
-                    Games
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#games" aria-expanded="false" aria-controls="games">
+                    Games<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
@@ -403,10 +938,10 @@
             </div>
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#signup"
-                    aria-expanded="false" aria-controls="signup">
-                    Signup Bonus & Promotions
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#signup" aria-expanded="false" aria-controls="signup">
+                    Signup Bonus & Promotions<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
@@ -423,10 +958,10 @@
             </div>
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#banking-options"
-                    aria-expanded="false" aria-controls="banking-options">
-                    Banking Options
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#banking-options" aria-expanded="false" aria-controls="banking-options">
+                    Banking Options<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
@@ -441,10 +976,10 @@
             </div>
             <div class="sidebar-item pb-1">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn btn-block text-left" data-toggle="collapse" data-target="#support-more" aria-expanded="false"
-                    aria-controls="support-more">
-                    Support & More Information
+                <h5 class="panel-title">
+                  <a class="btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#support-more" aria-expanded="false" aria-controls="support-more">
+                    Support & More Information<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
@@ -476,15 +1011,17 @@
               <div class="col-md-10">
                 <p class="text-primary">
                   <strong>Ethan Brown</strong>
-                  
+
                 </p>
                 <div class="form-group">
-                  <textarea name="" id="" style="width:100%" rows="5"></textarea>
+                  <textarea name="" id="text-area" style="width:100%" rows="5"></textarea>
                 </div>
                 <div class="submit-controls d-flex flex-row justify-content-between">
                   <div>Rate This Casino <div class="slidecontainer">
                       <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
-                    </div></div>
+
+                    </div>
+                  </div>
                   <button type="button" class="btn btn-primary">
                     SUBMIT
                   </button>
@@ -492,154 +1029,166 @@
               </div>
             </div>
             <div class="row pt-3 mt-3 brd">
-                <div class="col-md-2">
-                    <div class="avatar">
-                      <img src="https://via.placeholder.com/64" alt="">
-                    </div>
-                  </div>
-                  <div class="col-md-10">
-                    <p class="text-primary">Andrea Gardner</p>
-                    <p>Lorem ipsum dolor sit amet, no fastidii platonem repudiandae vel, nam ne mundi audire, ex amet molestie expetenda duo. Id mei movet aliquam efficiantur, nam an minim aperiri. Eum vero laboramus eu. Eum tractatos scriptorem conclusionemque ea, sea fugit antiopam te.</p>
-                  </div>
-                  <div class="col-md-2">
-                      <div class="avatar">
-                        <img src="https://via.placeholder.com/64" alt="">
-                      </div>
-                    </div>
-                    <div class="col-md-10">
-                      <p class="text-primary">Scott Oliver</p>
-                      <p>Lorem ipsum dolor sit amet, no fastidii platonem repudiandae vel, nam ne mundi audire, ex amet molestie expetenda duo. Id mei movet aliquam efficiantur, nam an minim aperiri. Eum vero laboramus eu. Eum tractatos scriptorem conclusionemque ea, sea fugit antiopam te.</p>
-                    </div>
+              <div class="col-md-2">
+                <div class="avatar">
+                  <img src="https://via.placeholder.com/64" alt="">
+                </div>
+              </div>
+              <div class="col-md-10">
+                <p class="text-primary">Andrea Gardner</p>
+                <p>Lorem ipsum dolor sit amet, no fastidii platonem repudiandae vel, nam ne mundi audire, ex amet
+                  molestie expetenda duo. Id mei movet aliquam efficiantur, nam an minim aperiri. Eum vero laboramus
+                  eu. Eum tractatos scriptorem conclusionemque ea, sea fugit antiopam te.</p>
+              </div>
+              <div class="col-md-2">
+                <div class="avatar">
+                  <img src="https://via.placeholder.com/64" alt="">
+                </div>
+              </div>
+              <div class="col-md-10">
+                <p class="text-primary">Scott Oliver</p>
+                <p>Lorem ipsum dolor sit amet, no fastidii platonem repudiandae vel, nam ne mundi audire, ex amet
+                  molestie expetenda duo. Id mei movet aliquam efficiantur, nam an minim aperiri. Eum vero laboramus
+                  eu. Eum tractatos scriptorem conclusionemque ea, sea fugit antiopam te.</p>
+              </div>
             </div>
           </div>
           <div class="card-title text-center">
-              <a href="#" class="text-primary font-weight-normal">SHOW ALL COMMENTS</a>
-            </div>
+            <a href="#" class="text-primary font-weight-normal">SHOW ALL COMMENTS</a>
+          </div>
         </div>
         <!-- USER REVIEW-->
         <!-- USER REVIEW-->
         <div class="card-main mt-4">
-            <div class="card-title">
-                List of All Slots Casino Games
-            </div>
-            <div class="card-body-m divider-btm">
-                <table class="table mb-0">
-                    <thead class="table-head">
-                      <tr>
-                        <th scope="col">NAME</th>
-                        <th scope="col">TYPE</th>
-                        <th scope="col">RATING</th>
-                        <th scope="col">SOFTWARE</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Paradise Found Slot</td>
-                        <td>Video Slots</td>
-                        <td>4.0</td>
-                        <td>Microgaming</td>
-                      </tr>
-                      <tr>
-                          <td>Paradise Found Slot</td>
-                          <td>Video Slots</td>
-                          <td>4.0</td>
-                          <td>Microgaming</td>
-                        </tr><tr>
-                            <td>Paradise Found Slot</td>
-                            <td>Video Slots</td>
-                            <td>4.0</td>
-                            <td>Microgaming</td>
-                          </tr><tr>
-                              <td>Paradise Found Slot</td>
-                              <td>Video Slots</td>
-                              <td>4.0</td>
-                              <td>Microgaming</td>
-                            </tr><tr>
-                                <td>Paradise Found Slot</td>
-                                <td>Video Slots</td>
-                                <td>4.0</td>
-                                <td>Microgaming</td>
-                              </tr><tr>
-                                  <td>Paradise Found Slot</td>
-                                  <td>Video Slots</td>
-                                  <td>4.0</td>
-                                  <td>Microgaming</td>
-                                </tr><tr>
-                                    <td>Paradise Found Slot</td>
-                                    <td>Video Slots</td>
-                                    <td>4.0</td>
-                                    <td>Microgaming</td>
-                                  </tr>
-                    </tbody>
-                  </table>
-              </div>
-            <div class="card-title text-center">
-                <a href="#" class="text-primary font-weight-normal">SHOW ALL</a>
-              </div>
+          <div class="card-title">
+            List of All Slots Casino Games
           </div>
-          <!-- USER REVIEW-->
-          <!-- RELATED NEWS -->
-          <div class="card-main mt-4">
-            <div class="card-title">
-              Related News
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4 card-body-main">
-                  <img   id="news" src="./assets/images/news.jpg"  class="img-fluid" />
-                  <p class="text-muted date pt-3">april 25, 2016</p>
-                  <h5>Lorem ipsum dolor sit amet,
-                      duo fugit vivendum</h5>
-                      <p class="text-muted">
-                          Quo altera mentitum repudiandae ex, te putent splendide est. Ei etiam vidisse his, est te aeterno scripserit dkies polutr ...
+          <div class="card-body-m divider-btm">
+            <table class="table mb-0">
+              <thead class="table-head">
+                <tr>
+                  <th scope="col">NAME</th>
+                  <th scope="col">TYPE</th>
+                  <th scope="col">RATING</th>
+                  <th scope="col">SOFTWARE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Paradise Found Slot</td>
+                  <td>Video Slots</td>
+                  <td>4.0</td>
+                  <td>Microgaming</td>
+                </tr>
+                <tr>
+                  <td>Paradise Found Slot</td>
+                  <td>Video Slots</td>
+                  <td>4.0</td>
+                  <td>Microgaming</td>
+                </tr>
+                <tr>
+                  <td>Paradise Found Slot</td>
+                  <td>Video Slots</td>
+                  <td>4.0</td>
+                  <td>Microgaming</td>
+                </tr>
+                <tr>
+                  <td>Paradise Found Slot</td>
+                  <td>Video Slots</td>
+                  <td>4.0</td>
+                  <td>Microgaming</td>
+                </tr>
+                <tr>
+                  <td>Paradise Found Slot</td>
+                  <td>Video Slots</td>
+                  <td>4.0</td>
+                  <td>Microgaming</td>
+                </tr>
+                <tr>
+                  <td>Paradise Found Slot</td>
+                  <td>Video Slots</td>
+                  <td>4.0</td>
+                  <td>Microgaming</td>
+                </tr>
+                <tr>
+                  <td>Paradise Found Slot</td>
+                  <td>Video Slots</td>
+                  <td>4.0</td>
+                  <td>Microgaming</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card-title text-center">
+            <a href="#" class="text-primary font-weight-normal">SHOW ALL</a>
+          </div>
+        </div>
+        <!-- USER REVIEW-->
+        <!-- RELATED NEWS -->
+        <div class="card-main mt-4">
+          <div class="card-title">
+            Related News
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 card-body-main">
+                <img id="news" src="./assets/images/news.jpg" class="img-fluid" />
+                <p class="text-muted date pt-3">april 25, 2016</p>
+                <h5>Lorem ipsum dolor sit amet,
+                  duo fugit vivendum</h5>
+                <p class="text-muted">
+                  Quo altera mentitum repudiandae ex, te putent splendide est. Ei etiam vidisse his, est te aeterno
+                  scripserit dkies polutr ...
 
-                      </p>
-                      <a href="#">READ MORE</a>
-                </div>
-                <div class="col-md-4 card-body-main" >
-                  <img id="news" src="./assets/images/news.jpg"  class="img-fluid" />
-                  <p class="text-muted date pt-3">april 25, 2016</p>
-                  <h5>Lorem ipsum dolor sit amet,
-                      duo fugit vivendum</h5>
-                      <p class="text-muted">
-                          Quo altera mentitum repudiandae ex, te putent splendide est. Ei etiam vidisse his, est te aeterno scripserit dkies polutr ...
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+              <div class="col-md-4 card-body-main">
+                <img id="news" src="./assets/images/news.jpg" class="img-fluid" />
+                <p class="text-muted date pt-3">april 25, 2016</p>
+                <h5>Lorem ipsum dolor sit amet,
+                  duo fugit vivendum</h5>
+                <p class="text-muted">
+                  Quo altera mentitum repudiandae ex, te putent splendide est. Ei etiam vidisse his, est te aeterno
+                  scripserit dkies polutr ...
 
-                      </p>
-                      <a href="#">READ MORE</a>
-                </div>
-                <div class="col-md-4 card-body-main">
-                  <img id="news" src="./assets/images/news.jpg" class="img-fluid"/>
-                  <p class="text-muted date pt-3">april 25, 2016</p>
-                  <h5>Lorem ipsum dolor sit amet,
-                      duo fugit vivendum</h5>
-                      <p class="text-muted">
-                          Quo altera mentitum repudiandae ex, te putent splendide est. Ei etiam vidisse his, est te aeterno scripserit dkies polutr ...
+                </p>
+                <a href="#">READ MORE</a>
+              </div>
+              <div class="col-md-4 card-body-main">
+                <img id="news" src="./assets/images/news.jpg" class="img-fluid" />
+                <p class="text-muted date pt-3">april 25, 2016</p>
+                <h5>Lorem ipsum dolor sit amet,
+                  duo fugit vivendum</h5>
+                <p class="text-muted">
+                  Quo altera mentitum repudiandae ex, te putent splendide est. Ei etiam vidisse his, est te aeterno
+                  scripserit dkies polutr ...
 
-                      </p>
-                      <a href="#">READ MORE</a>
-                </div>
+                </p>
+                <a href="#">READ MORE</a>
               </div>
             </div>
           </div>
-          <!-- RELATED NEWS -->
+        </div>
+        <!-- RELATED NEWS -->
       </div>
       <!-- SIDEBAR -->
-      <div class="col-md-3 mt-1"  id="sidebar">
+      <div class="col-md-3 mt-1" id="sidebar">
         <div class="card-main  stickySide">
           <div class="card-title">Casino details</div>
           <div class="accordion" id="sidebar">
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#firstItem"
-                    aria-expanded="false" aria-controls="firstItem">
-                    COMPANY INFO
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed collapsed"
+                    data-toggle="collapse" data-target="#firstItem" aria-expanded="false" aria-controls="firstItem">
+                    COMPANY INFO<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
               <div id="firstItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+                <div class="card-body-main text-muted">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Ducimus, eius?
                 </div>
@@ -649,15 +1198,15 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#secondItem"
-                    aria-expanded="false" aria-controls="secondItem">
-                    GAMING PLATFORM
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#secondItem" aria-expanded="false" aria-controls="secondItem">
+                    GAMING PLATFORM<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
               <div id="secondItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+                <div class="card-body-main text-muted">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Et, placeat.
                 </div>
@@ -667,15 +1216,15 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#thirdItem"
-                    aria-expanded="false" aria-controls="thirdItem">
-                    MOBILE DEVICES
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#thirdItem" aria-expanded="false" aria-controls="thirdItem">
+                    MOBILE DEVICES<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
               <div id="thirdItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+                <div class="card-body-main text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Facilis, minus.
                 </div>
@@ -685,15 +1234,15 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#fourthItem"
-                    aria-expanded="false" aria-controls="fourthItem">
-                    LANGUAGES
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#fourthItem" aria-expanded="false" aria-controls="fourthItem">
+                    LANGUAGES<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
               <div id="fourthItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+                <div class="card-body-main text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Facilis, minus.
                 </div>
@@ -702,15 +1251,15 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#fourthItem"
-                    aria-expanded="false" aria-controls="fourthItem">
-                    CATEGORY
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#category" aria-expanded="false" aria-controls="category">
+                    CATEGORY<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
-              <div id="fourthItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+              <div id="category" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
+                <div class="card-body-main text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Facilis, minus.
                 </div>
@@ -719,33 +1268,15 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#fourthItem"
-                    aria-expanded="false" aria-controls="fourthItem">
-                    TOTAL GAMES
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#total" aria-expanded="false" aria-controls="total">
+                    TOTAL GAMES<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
-              <div id="fourthItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Facilis, minus.
-                </div>
-              </div>
-            </div>
-            <!-- Accordion item -->
-            <!-- Accordion item -->
-            <div class="sidebar-item">
-              <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#fourthItem"
-                    aria-expanded="false" aria-controls="fourthItem">
-                    CURRENCIES
-                  </a>
-                </h5>
-              </div>
-              <div id="fourthItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+              <div id="total" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
+                <div class="card-body-main text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Facilis, minus.
                 </div>
@@ -755,15 +1286,15 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#fourthItem"
-                    aria-expanded="false" aria-controls="fourthItem">
-                    WITHDRAWALS
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#currencies" aria-expanded="false" aria-controls="currencies">
+                    CURRENCIES<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
-              <div id="fourthItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+              <div id="currencies" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
+                <div class="card-body-main text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Facilis, minus.
                 </div>
@@ -773,15 +1304,33 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#fourthItem"
-                    aria-expanded="false" aria-controls="fourthItem">
-                    DEPOSIT
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#withdrawals" aria-expanded="false" aria-controls="withdrawals">
+                    WITHDRAWALS<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
-              <div id="fourthItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+              <div id="withdrawals" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
+                <div class="card-body-main text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Facilis, minus.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <!-- Accordion item -->
+            <div class="sidebar-item">
+              <div class="sidebar-header">
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#deposit" aria-expanded="false" aria-controls="deposit">
+                    DEPOSIT<i class="fa fa-caret-up"></i>
+                  </a>
+                </h5>
+              </div>
+              <div id="deposit" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
+                <div class="card-body-main text-muted">
                   PayPal , Entropay , Moneta , Eps , giropay , paysafecard ,
                   iDEAL , Przelewy24 , Sofort , EZIPay , Neosurf , Instant
                   Bank , iDebit , Flexepin
@@ -792,15 +1341,15 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#fourthItem"
-                    aria-expanded="false" aria-controls="fourthItem">
-                    DEPOSIT & WITHDRAWALS
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#depositwith" aria-expanded="false" aria-controls="depositwith">
+                    DEPOSIT & WITHDRAWALS<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
-              <div id="fourthItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+              <div id="depositwith" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
+                <div class="card-body-main text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Facilis, minus.
                 </div>
@@ -810,15 +1359,15 @@
             <!-- Accordion item -->
             <div class="sidebar-item">
               <div class="sidebar-header">
-                <h5>
-                  <a class="btn collapse-btn btn-block text-left" data-toggle="collapse" data-target="#fourthItem"
-                    aria-expanded="false" aria-controls="fourthItem">
-                    CUSTOMER SUPPORT
+                <h5 class="panel-title">
+                  <a class="btn collapse-btn btn-block text-left d-flex justify-content-between collapsed" data-toggle="collapse"
+                    data-target="#customersupp" aria-expanded="false" aria-controls="customersupp">
+                    CUSTOMER SUPPORT<i class="fa fa-caret-up"></i>
                   </a>
                 </h5>
               </div>
-              <div id="fourthItem" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
-                <div class="card-body-main">
+              <div id="customersupp" class="collapse" aria-labelledby="headingOne" data-parent="#sidebar">
+                <div class="card-body-main text-muted">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Facilis, minus.
                 </div>
@@ -838,39 +1387,45 @@
   <footer class="mt-5">
     <div class="container">
       <div class="row pt-3">
-        <div class="col-md-6 text-muted">
+        <div class="col-md-6 text-muted order-2 order-md-1">
           <div class="row">
-              <div class="col-md-6">
-                  <p class="text-primary text-uppercase">World Casino Depository</p>
-                  <ul  class="text-muted">
-                    <li>
-                        About Us</li>
-                        <li>Contact Us</li>
-                        <li>Terms & Consitions</li>
-                        <li>Privacy Policy
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6 ">
-                    <p class="text-primary text-uppercase">Useful links</p>
-                    <ul>
-                        <li>Other Gaming Resources</li>
-                        <li>Gambling Age Chart</li>
-                    </ul>
-                  </div>
-          </div>
-          <p  class="text-muted mt-5 pt-5">
-© 2003-2017 E3WD Inc. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 text-muted">
-            <p class="text-primary text-uppercase">please note</p>
-            <p>There are thousands of jurisdictions worldwide with access to the internet. It is your responsibility to determine whether it is legal for you to place a wager in the jurisdiction in which you are located based on local regulatory and age restrictions. World Casino Directory is an independent information provider and does not process any money. The links on our site are for entertainment and informational purposes only. Accuracy is intended but is not guaranteed.
-                <p class="text-primary text-uppercase">play responsibly.</p>
-                <p>Know when to stop before you start. If you think you or someone you know may have a problem with gambling, visit GamCare for support.</p>
+            <div class="col-md-6">
+              <p class="text-primary text-uppercase">World Casino Depository</p>
+              <ul class="text-muted">
+                <li>
+                  About Us</li>
+                <li>Contact Us</li>
+                <li>Terms & Consitions</li>
+                <li>Privacy Policy
+                </li>
+              </ul>
             </div>
-        
+            <div class="col-md-6 ">
+              <p class="text-primary text-uppercase">Useful links</p>
+              <ul>
+                <li>Other Gaming Resources</li>
+                <li>Gambling Age Chart</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-muted mt-5 pt-5">
+            © 2003-2017 E3WD Inc. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-muted order-1 order-md-2">
+          <p class="text-primary text-uppercase">please note</p>
+          <p>There are thousands of jurisdictions worldwide with access to the internet. It is your responsibility to
+            determine whether it is legal for you to place a wager in the jurisdiction in which you are located based
+            on local regulatory and age restrictions. World Casino Directory is an independent information provider and
+            does not process any money. The links on our site are for entertainment and informational purposes only.
+            Accuracy is intended but is not guaranteed.
+            <p class="text-primary text-uppercase">play responsibly.</p>
+            <p>Know when to stop before you start. If you think you or someone you know may have a problem with
+              gambling, visit GamCare for support.</p>
+        </div>
+
       </div>
     </div>
+
   </footer>
 
   <!-- SCRIPTS -->
@@ -881,11 +1436,9 @@
     };
     // Get the navbar
     var navbar = document.getElementById("navbar");
-    var sidebar = document.getElementById('sidebar');
 
     // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
-    var stickySide = sidebar.offsetTop;
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function stickyHeader() {
       if (window.pageYOffset >= sticky) {
@@ -894,36 +1447,58 @@
         navbar.classList.remove("sticky");
       }
     }
-    function stickySideBar(){
-      if(window.pageYOffset >= stickySide){
+
+    function stickySideBar() {
+      if (window.pageYOffset >= stickySide) {
         sidebar.classList.add('stickySide')
-      }else{
+      } else {
         sidebar.classList.remove('stickySide')
       }
+    }
+
+    function collapseBonusDetails(e) {
+      let classes = document.getElementById(`${e}CardMain`).classList.length;
+      if (classes === 0) {}
+      document.getElementById(`${e}CardMain`).classList.toggle('d-none')
+      document.getElementById(`${e}Card`).classList.toggle('d-none')
     }
   </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   <script>
-    var slider = new Slider('#ex1', {
-	formatter: function(value) {
-		return 'Current value: ' + value;
-	}
-});
     (function ($) {
       "use strict";
 
       // manual carousel controls
       $(".next").click(function () {
-        $(".carousel").carousel("next");
+        $("#postsCarousel").carousel("next");
+        let currentNumber = $('#number-slide').html();
+        let nextNumber;
+        if (currentNumber === '8') {
+          nextNumber = '4'
+        } else {
+          nextNumber = '8'
+        }
+        $('#number-slide').html(nextNumber)
         return false;
       });
       $(".prev").click(function () {
-        $(".carousel").carousel("prev");
+        $("#postsCarousel").carousel("prev");
+        let currentNumber = $('#number-slide').html();
+        let nextNumber;
+        if (currentNumber === '4') {
+          nextNumber = '8'
+        } else {
+          nextNumber = '4'
+        }
+        $('#number-slide').html(nextNumber)
         return false;
       });
     })(jQuery);
+    $('.dropdown-toggle').dropdown()
   </script>
 </body>
 

@@ -1,8 +1,9 @@
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100; }
+@media screen and (min-width: 992px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; } }
 
 .stickySide {
   position: -webkit-sticky;
@@ -27,7 +28,13 @@ header {
     color: #2b8a3e; }
   header .header-subscribe input {
     background-color: #313238;
-    outline: none; }
+    outline: none;
+    border: none;
+    color: white; }
+    header .header-subscribe input:focus {
+      background-color: #313238;
+      box-shadow: none;
+      color: white; }
   header .header-subscribe .sub-btn {
     background-color: #2b8a3e;
     color: white;
@@ -37,6 +44,12 @@ header {
     margin-left: 10px;
     padding-top: 5px; }
 
+.submit-controls .btn:hover {
+  color: #007cab;
+  box-shadow: 1px 3px 5px 0px rgba(40, 37, 104, 0.17);
+  background-color: #00aeef;
+  border: none; }
+
 nav {
   background-color: white; }
   nav .custom-nav {
@@ -44,7 +57,8 @@ nav {
   nav .navbar {
     padding-bottom: 0; }
   nav .navbar-light .navbar-nav .nav-link {
-    color: #323648; }
+    color: #323648;
+    white-space: nowrap; }
     nav .navbar-light .navbar-nav .nav-link:hover {
       color: #00aeef; }
   nav .navbar-light .navbar-nav .active .nav-link {
@@ -79,11 +93,15 @@ nav {
       padding: 0px 10px; }
 
 .sub-nav {
-  background-color: #d9e5f4; }
-  .sub-nav .sub-nav-menu ul {
-    list-style: none; }
-    .sub-nav .sub-nav-menu ul li {
-      margin-left: 10px; }
+  background-color: #d9e5f4;
+  white-space: nowrap; }
+  .sub-nav .sub-nav-menu {
+    font-size: 0.95em; }
+    .sub-nav .sub-nav-menu ul {
+      list-style: none; }
+      .sub-nav .sub-nav-menu ul li {
+        margin-left: 10px;
+        white-space: nowrap; }
 
 .jumbo {
   width: 100%;
@@ -98,7 +116,34 @@ nav {
   .jumbo .reviews ul {
     list-style: none; }
     .jumbo .reviews ul li {
-      border-bottom: 3px solid #6aabe5; }
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end; }
+      .jumbo .reviews ul li .rew-title {
+        position: relative;
+        width: 100%;
+        background: #6aabe5;
+        border-radius: 4px;
+        height: 2px;
+        margin-top: 26px; }
+        .jumbo .reviews ul li .rew-title .rew-title-name {
+          z-index: 2;
+          position: relative;
+          font-weight: 400;
+          font-size: 12px;
+          margin-top: -19px;
+          color: #6aabe5; }
+          .jumbo .reviews ul li .rew-title .rew-title-name .fill {
+            background: #fff;
+            margin-top: 2px;
+            z-index: 10; }
+      .jumbo .reviews ul li .rew-rating {
+        font-size: 1.2em; }
+      .jumbo .reviews ul li p {
+        margin: 0;
+        margin-left: 6px;
+        font-size: 0.8em; }
 
 .card-main {
   background-color: white;
@@ -117,6 +162,11 @@ nav {
     padding: 20px;
     border-left: 1px solid #e4dcec;
     position: relative; }
+    .card-main .card-body-main .btn:hover {
+      color: #007cab;
+      box-shadow: 1px 3px 5px 0px rgba(40, 37, 104, 0.17);
+      background-color: #00aeef;
+      border: none; }
     .card-main .card-body-main #news {
       border-radius: 4px; }
     .card-main .card-body-main p .date {
@@ -151,9 +201,17 @@ nav {
 .sidebar-header {
   padding-left: 10px;
   padding-right: 10px; }
+  .sidebar-header .btn-primary:hover {
+    color: #007cab;
+    box-shadow: 1px 3px 5px 0px rgba(40, 37, 104, 0.17);
+    background-color: #00aeef;
+    border: none; }
   .sidebar-header .collapse-btn {
-    border-bottom: 1px solid #e4dcec;
-    border-width: 80%; }
+    border-bottom: 1px solid #d4d4e5;
+    border-radius: 0; }
+
+.panel-title .fa {
+  transition: .3s transform ease-in-out; }
 
 .carousel-item-prev,
 .carousel-item-next,
@@ -180,7 +238,7 @@ nav {
   border-radius: 50%; }
 
 #ex1Slider .slider-selection {
-  background: #BABABA; }
+  background: #bababa; }
 
 .slider {
   -webkit-appearance: none;
@@ -190,8 +248,8 @@ nav {
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s; }
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s; }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -199,14 +257,14 @@ nav {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #0092C9;
+  background: #0092c9;
   cursor: pointer; }
 
 .slider::-moz-range-thumb {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #0092C9;
+  background: #0092c9;
   cursor: pointer; }
 
 .brd {
@@ -220,3 +278,71 @@ nav {
 footer {
   width: 100%;
   background-color: #d9e5f4; }
+
+@media screen and (min-width: 992px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position: static; }
+  .navbar .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 40px; }
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-menu,
+  .navbar .dropdown .dropdown-menu:hover {
+    display: block !important; }
+  .navbar .dropdown-menu {
+    box-shadow: 0px 1px 3px 0px rgba(40, 37, 104, 0.17);
+    background-color: #fff; } }
+
+.my-nav li {
+  padding: 5px 10px; }
+  .my-nav li:first-child {
+    padding-top: 20px; }
+
+.dropdown-article {
+  text-transform: none;
+  cursor: pointer; }
+  .dropdown-article:hover {
+    box-shadow: 0px 1px 3px 0px rgba(40, 37, 104, 0.17); }
+  .dropdown-article .drp-title {
+    font-size: 12px; }
+  .dropdown-article .drp-desc {
+    line-height: 0.8em; }
+
+#text-area {
+  background-color: #f3f7fb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px; }
+
+#progress-wrapper {
+  background-color: #6aabe5; }
+
+.panel-title a:not(.collapsed) {
+  color: #6aabe5;
+  font-weight: bold; }
+
+.panel-title a:hover {
+  color: #6aabe5;
+  font-weight: bold; }
+
+.panel-title .collapsed {
+  color: #323648; }
+
+.bonus-desc p {
+  max-height: 230px;
+  overflow-y: scroll; }
+
+.bonus-desc button {
+  padding: 8px 16px;
+  box-shadow: 1px 3px 5px 0px rgba(40, 37, 104, 0.17); }
+
+.collapsed .fa {
+  transform: rotate(180deg); }
